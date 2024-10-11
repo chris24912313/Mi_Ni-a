@@ -170,8 +170,17 @@
     <div id="child">
         <h4>💗Te Amo</h4>
         <h4>Mi Princesita</h4>
+        <audio loop id="myAudio">
+            <source src="./secundaria.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
     </div>
+
+    
     <script type="text/javascript">
+        const audio = document.getElementById('myAudio');
+        
+        audio.play(); // Reproducir automáticamente al cargar la página
         const colors = [
             "#eec996",
             "#8fb7d3",

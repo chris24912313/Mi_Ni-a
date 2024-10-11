@@ -124,7 +124,7 @@
             width: 0%;
             background: linear-gradient(to right, #ff66cc, #ffcc66);
             border-radius: 10px;
-            animation: progress 10s ease-in-out;
+            animation: progress 5s ease-in-out;
           }
           
           @keyframes progress {
@@ -151,19 +151,13 @@
     <!-- <canvas id= "canvas"></canvas>  -->
     <div class="progress-bar" id="myBar"></div>
     <audio loop id="myAudio">
-        <source src="./musica.mp3" type="audio/mp3">
+        <source src="./principal.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
     <script>
         const audio = document.getElementById('myAudio');
-        const progressBar = document.getElementById('progress');
         
         audio.play(); // Reproducir automáticamente al cargar la página
-        
-        audio.addEventListener('timeupdate', () => {
-          const progressPercent = (audio.currentTime / audio.duration) * 100;
-          progressBar.style.width = progressPercent + '%';
-        });
         var settings = {
             particles: {
                 length: 500, // maximum amount of particles
@@ -405,7 +399,7 @@
         // Redirige a otra página después de 3 segundos
         setTimeout(function() {
           window.location.href = "./love3.html"; // Reemplaza con la URL de destino
-        }, 10000); // 3000 milisegundos = 3 segundos
+        }, 5000); // 3000 milisegundos = 3 segundos
       </script>
 </BODY>
 <!--                           
