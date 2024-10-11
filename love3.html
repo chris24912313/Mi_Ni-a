@@ -180,7 +180,10 @@
     <script type="text/javascript">
         const audio = document.getElementById('myAudio');
         
-        audio.play(); // Reproducir automáticamente al cargar la página
+        
+        window.onload = function() {
+            audio.play();
+        }
         const colors = [
             "#eec996",
             "#8fb7d3",
